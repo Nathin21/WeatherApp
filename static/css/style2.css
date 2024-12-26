@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'poppins', 'sans-serif';
+}
+
+h1 {
+    color: #333;
+    margin: 0px 0px 15px 0px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-family: 'poppins', 'sans-serif';
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    width: 70%;
+    margin-top: 20px;
+    height: 25px;
+    background-color: #ebfffc;
+    color: #555;
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 16px;
+    background-color: #ebfffc;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+
+}
+
+.weather-info {
+
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 600px;
+    position: relative;
+    top: 20px;
+    width: 400px;
+}
+
+#img1 {
+    width: 185px;
+    height: 185px;
+    position: relative;
+    left: 53px;
+    top: 1px;
+
+}
+
+.box {
+
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    position: relative;
+
+    width: 100%;
+    bottom: 90px;
+
+}
+
+#description {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#temp {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+    color: white;
+
+}
+
+h2 {
+    color: orange;
+    position: relative;
+    top: -30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+
+}
+
+h3 {
+    position: relative;
+    bottom: 70px;
+}
+
+.hum {
+    margin: 10px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hum img,
+p {
+    margin: 5px;
+}
+
+
+.weather-info div img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+#sm {
+    height: 45px;
+    width: 45px;
+}
+
+#wind {
+    margin-top: 15px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.yy {
+    position: relative;
+    bottom: 30px;
+    color: black;
+    font-size: 18px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#wn {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -5px;
+}
+
+#humm img {
+    width: 60px;
+    height: 60px;
+}
+
+#humm p {
+    position: relative;
+    bottom: 10px;
+}
+
+
+
+/* ------------------- */
+
+
+/* Add this at the end of your existing CSS */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .weather-info {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        top: 0;
+    }
+
+    #img1 {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        bottom: 0;
+    }
+
+    .hum {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+        top: -20px;
+    }
+
+    h3 {
+        bottom: 50px;
+    }
+
+    #temp {
+        font-size: 30px;
+        top: 0;
+    }
+
+    .yy {
+        font-size: 14px;
+        bottom: 10px;
+    }
+}
